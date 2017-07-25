@@ -16,4 +16,4 @@
 # JAVA_OPTS configuration
 ---
 from_environment: true
-java_opts: -XX:+UseConcMarkSweepGC
+java_opts: -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -Dsun.rmi.dgc.client.gcInterval=3600000
