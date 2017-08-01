@@ -16,4 +16,4 @@
 # JAVA_OPTS configuration
 ---
 from_environment: true
-java_opts: -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -Dsun.rmi.dgc.client.gcInterval=3600000
+java_opts: -server -Xms4g -Xmx4g -XX:NewSize=256m -XX:MaxNewSize=356m -XX:PermSize=256m -XX:MaxPermSize=356m -XX:ReservedCodeCacheSize=256m -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -Dsun.rmi.dgc.client.gcInterval=3600000
